@@ -26,6 +26,7 @@ class KafkaTradeProducer:
                 "batch.size": 65536,
                 "compression.type": "lz4",
                 "acks": "all",
+                "enable.idempotence": True,
             }
         )
 
